@@ -15,7 +15,7 @@ class BusSeats extends Component {
       }
     
       createSeats = () => {
-
+        console.log('test')
         let seatsElements = []
         for(let i =0; i < this.state.seatsCount; i++){
             seatsElements.push(<div key={i} className="bus-seat"></div>)
