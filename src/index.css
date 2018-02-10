@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.login-form {
+  border:1px solid red;
+}
+
+.TownSearch
+{
+  border:1px solid red;
+}
+.Bus{
+  border:1px solid red;
+  height: 150px,
+
+}
+
+.Login {
+	width: 500px;
+	margin: auto;
+}
+.demoForm {
+	width: 500px;
+	margin: auto;
+}

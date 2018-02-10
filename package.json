@@ -1,0 +1,40 @@
+{
+  "name": "bustickets",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^4.0.0",
+    "create-react-class": "^15.6.3",
+    "link-react": "^3.0.0",
+    "material-design-icons": "^3.0.1",
+    "material-ui": "^0.20.0",
+    "mdbreact": "^4.1.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-datetimepicker": "0.0.22",
+    "react-bootstrap-table": "^4.3.1",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-tap-event-plugin": "^3.0.2",
+    "react-virtualized-select": "^3.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@types/material-ui": "^0.20.5",
+    "@types/react-tap-event-plugin": "0.0.30",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

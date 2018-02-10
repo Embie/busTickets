@@ -1,0 +1,25 @@
+{
+    "routes": [{
+        "day":"Сряда",
+        "time":"17:30",
+        "route":"Пловдив - София",
+        "remainingTickets": 18,
+        "price": 20
+    },
+    {
+        "day":"Сряда",
+        "time":"17:30",
+        "route":"Пловдив - София",
+        "remainingTickets": 18,
+        "price": 20
+    },
+    {
+        "day":"Сряда",
+        "time":"17:30",
+        "route":"Пловдив - София",
+        "remainingTickets": 18,
+        "price": 20
+    }
+]
+    
+}

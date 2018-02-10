@@ -1,0 +1,14 @@
+.Cart {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.Cart .cart-item-label {
+    color:#888;
+}
+
+.Cart .cart-item-label, .Cart .cart-item-price {
+    line-height: 40px;
+    font-size: 22px;
+}
