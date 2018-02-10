@@ -29,18 +29,17 @@ class Navbar extends Component {
                 key="Home"
                 style={styles.button}
                 labelColor={styles.linkColor}
-                containerElement={<Link className="HeaderLink" to="/">Login</Link>}
+                containerElement={<Link className="HeaderLink" to="/"></Link>}
                 icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
             />}
             </li>
-
             <li class="nav-item active">
                 {<RaisedButton
-                    label="Login"
-                    key="Login"
+                    label="busseats"
+                    key="busseats"
                     style={styles.button}
                     labelColor={styles.linkColor}
-                    containerElement={<Link className="HeaderLink" to="/login">Login</Link>}
+                    containerElement={<Link className="HeaderLink" to="/busseats">Reserve Seats</Link>}
                     icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
                 />}
             </li>
@@ -54,16 +53,7 @@ class Navbar extends Component {
                     icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
                 />}
             </li>
-            <li class="nav-item active">
-                {<RaisedButton
-                    label="Login"
-                    key="Login"
-                    style={styles.button}
-                    labelColor={styles.linkColor}
-                    containerElement={<Link className="HeaderLink" to="/login">Login</Link>}
-                    icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
-                />}
-            </li>
+            
         </ul>
     </nav>
     <br />  

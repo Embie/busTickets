@@ -9,6 +9,8 @@ import Registration from './components/login/Registration';
 //import LineList from './components/home/LineList';
 import SignUp from './components/login/SignUp';
 import Profile from './components/profile/Profile';
+import BusSeats from './components/busseats/BusSeats';
+
 import Search from './components/home/Search';
 //import Promo from './components/promo/Promo';
 import Select from 'react-select';
@@ -32,8 +34,8 @@ const routes = [
       path:'/',
       exact:true,
       header: () => <NavBar/>,
-      right: () => <Search/>
-      
+      right: () => <Search/>,
+      left: () => <Bus/>
      
   },
   {
@@ -41,8 +43,16 @@ const routes = [
       exact:true,
       header:() =><NavBar/>,
       right: () => <SignUpAndRegistration/>,
+    
       
-  }
+  },
+  {
+    path:'/busseats',
+    exact:true,
+    header:() =><NavBar/>,
+    left: () => <BusSeats/>,
+    
+}
 ]
 class App extends Component {
   render() {
@@ -70,23 +80,23 @@ class App extends Component {
                               key={i}
                               path={route.path}
                               exact={route.exact}
-                              component={route.right}
+                              component={route.left}
                           />
                       )}
                   </div>
-              </div>
-              <div className="row">
+              
                   <div className="col-md-6">
                       {routes.map((route, i) =>
                           <Route
                               key={i}
                               path={route.path}
                               exact={route.exact}
-                              component={route.left}
+                              component={route.right}
                           />
                       )}
                   </div>
-              </div>
+                  </div>
+
             </div>
         </Router>
     </MuiThemeProvider>

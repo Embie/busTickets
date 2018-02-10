@@ -11,11 +11,7 @@ body {
 {
   border:1px solid red;
 }
-.Bus{
-  border:1px solid red;
-  height: 150px,
 
-}
 
 .Login {
 	width: 500px;
@@ -24,4 +20,14 @@ body {
 .demoForm {
 	width: 500px;
 	margin: auto;
+}
+
+.bus-seat{
+  border: 1px solid gray;
+  width: 25px;
+  height: 25px;
+}
+.Bus{
+  width:250;
+  height: 350;
 }

@@ -2,21 +2,23 @@ import React, {Component} from 'react';
 import SelectBoxOne from './SelectBoxOne';
 import SelectBoxTwo from './SelectBoxTwo';
 import DatePicker from './DatePicker';
-import Paper from 'material-ui/Paper/Paper';
+import { Paper } from 'material-ui';
 
 class Search  extends Component {
     render() {
       return (
-       <Paper>
-            <form className="col-sm-12 col-sm-push-4">
-              <SelectBoxOne/>
-              <SelectBoxTwo/>
-              <DatePicker/>
-              <div>
-              <button class="btn  btn-block btn-danger"> Search </button>
-              </div>
-              </form> <br/>
-    </Paper>
+      <Paper>
+            <div className="Search">
+              <div className="row">
+                <form className="col-sm-4 col-sm-push-4">
+                  <SelectBoxOne/>
+                  <SelectBoxTwo/>
+                <DatePicker/>
+                  <button class="btn btn-lg btn-success"> Search </button>
+                </form>
+          </div>
+      </div>
+   </Paper>
       )
     }
   }

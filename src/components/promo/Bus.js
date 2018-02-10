@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 
-import busImage from './bus.png' // relative path to image
+import busImage from './bus.png' 
 
 class Bus extends Component {
 
