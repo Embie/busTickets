@@ -1,33 +1,75 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
+
 .login-form {
-  border:1px solid red;
+    border: 1px solid red;
 }
 
-.TownSearch
-{
-  border:1px solid red;
+.TownSearch {
+    border: 1px solid red;
 }
-
 
 .Login {
-	width: 500px;
-	margin: auto;
-}
-.demoForm {
-	width: 500px;
-	margin: auto;
+    width: 500px;
+    margin: auto;
 }
 
-.bus-seat{
-  border: 1px solid gray;
-  width: 25px;
-  height: 25px;
+.demoForm {
+    width: 500px;
+    margin: auto;
 }
-.Bus{
-  width:250;
-  height: 350;
+
+.seats-selector {
+    position: relative;
+}
+
+.seats-selector .seats-container {
+    position: absolute;
+    top: 165px;
+    left: 95px;
+}
+
+.bus-row {
+    min-height: 35px;
+}
+.bus-seats {
+    width:66px;
+}
+.bus-seats:last-child {
+    text-align:right;
+}
+
+.bus-seat {
+    cursor:pointer;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 1px;
+    color: #fff;
+    background-color: #a2a2a2;
+    font-size: 12px;
+    border-bottom: 5px solid #2d2d2d;
+}
+
+.bus-seat:nth-child(3) {
+    margin-left:23px;
+}
+
+
+.bus-seat-reserved {
+    background-color: red;
+}
+
+.bus-seat-selected {
+    background-color: blue;
+}
+
+.Bus {
+    width: 250px;
+    height: 350px;
 }
