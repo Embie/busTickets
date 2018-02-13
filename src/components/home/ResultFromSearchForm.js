@@ -21,7 +21,7 @@ var products = [{
   id: 1,
   date: "12/01/2018",
   hour:"13:30",
-  line:"Plovdiv-S0fia",
+  line:"Plovdiv-Sofia",
   price: 8, 
   
 },
@@ -45,18 +45,18 @@ const cellEditProp = {
 class ResultFromSearchForm extends Component {
   render() {
     return (
-      <div class="container">
+      <div class="container"> <br />
         <div class="row">
           <div class="col-md-12">
             <div className="ResultFromSearchForm">
               <BootstrapTable data={ products } insertRow={ true } cellEdit={ cellEditProp } deleteRow={ true } selectRow={ selectRowProp } options={ options }>
-                <TableHeaderColumn dataField='id' isKey hidden> ID</TableHeaderColumn>
-                <TableHeaderColumn dataField='date'>Дата</TableHeaderColumn>
-                <TableHeaderColumn dataField='hour'>Час</TableHeaderColumn>
-                <TableHeaderColumn dataField='line'>Линия</TableHeaderColumn>
-                <TableHeaderColumn dataField='price'>Цена</TableHeaderColumn>
-                <TableHeaderColumn dataField='action'></TableHeaderColumn>
-            </BootstrapTable>
+                  <TableHeaderColumn dataField='id' isKey hidden> ID</TableHeaderColumn>
+                  <TableHeaderColumn dataField='date'>Дата</TableHeaderColumn>
+                  <TableHeaderColumn dataField='hour'>Час</TableHeaderColumn>
+                  <TableHeaderColumn dataField='line'>Линия</TableHeaderColumn>
+                  <TableHeaderColumn dataField='price'>Цена</TableHeaderColumn>
+                  <TableHeaderColumn dataField='price'>Цена</TableHeaderColumn>
+              </BootstrapTable>
             </div>
           </div>
         </div>

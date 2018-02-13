@@ -21,7 +21,12 @@ class Navbar extends Component {
   render() {
     return (
 <div class="container">
+
     <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/booking.png" width="30" height="30" class="d-inline-block align-top" alt="logo"/>
+
+        </a>
         <ul class="navbar-nav ">
             <li class="nav-item active ">
             {<RaisedButton
@@ -43,7 +48,7 @@ class Navbar extends Component {
                     icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
                 />}
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active  float-xs-right">
                 {<RaisedButton
                     label="Login"
                     key="Login"

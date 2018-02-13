@@ -13,7 +13,7 @@ class SelectBoxOne extends React.Component {
     }
     render() {
       return (
-        <div className="form-group">
+        <div className="form-group ">
           <label htmlFor="select1" >Oт</label>
           <select value={this.state.value} onChange={this.onChange.bind(this)} className="form-control" >
             <option value="select">Select an Option</option>

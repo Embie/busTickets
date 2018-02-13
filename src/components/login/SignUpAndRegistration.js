@@ -21,6 +21,8 @@ class SignUpAndRegistration extends Component {
     
       render() {
         return (
+
+          
         <Paper zDepth={2}> 
           <Tabs
             value={this.state.value}

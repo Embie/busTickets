@@ -8,15 +8,16 @@ class Search  extends Component {
     render() {
       return (
       <Paper>
-            <div className="Search">
+          <br/>
+            <div className="container search">
               <div className="row">
-                <form className="col-sm-4 col-sm-push-4">
+                <form className="col-sm-6 col-sm-push-4">
                   <SelectBoxOne/>
                   <SelectBoxTwo/>
                 <DatePicker/>
-                  <button class="btn btn-lg btn-success"> Search </button>
+                  <button class="btn btn-info float-rigth btn-block"> Find trip </button>
                 </form>
-          </div>
+          </div><br/>
       </div>
    </Paper>
       )

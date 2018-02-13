@@ -10,9 +10,8 @@ import Registration from './components/login/Registration';
 import SignUp from './components/login/SignUp';
 import Profile from './components/profile/Profile';
 import BusSeats from './components/busseats/BusSeats';
+import CollectInformation from './components/home/CollectInformation';
 
-import Search from './components/home/Search';
-//import Promo from './components/promo/Promo';
 import Select from 'react-select';
 import  './App.css';
 import  SignUpAndRegistration from './components/login/SignUpAndRegistration';
@@ -22,7 +21,7 @@ import {
   Link
 } from 'react-router-dom';
 import { Paper } from 'material-ui';
-import Bus from './components/promo/Bus';
+
 
 const routes = [
   {
@@ -34,8 +33,8 @@ const routes = [
       path:'/',
       exact:true,
       header: () => <NavBar/>,
-      right: () => <Search/>,
-      left: () => <Bus/>
+      left: () => <CollectInformation/>,
+
      
   },
   {
@@ -58,11 +57,11 @@ class App extends Component {
   render() {
     return (
     <MuiThemeProvider>
-        
       <Router>
-          <div className="container">
+          <div className="container" id="contain" >
               <div className="row">
                   <div className="col-md-12">
+
                       {routes.map((route, i) =>
                           <Route
                               key={i}
@@ -73,8 +72,12 @@ class App extends Component {
                       )}
                   </div>
               </div>
-              <div className="row">
-                  <div className="col-md-6">
+             <div className="row align-items-center justify-content-center">
+                 <h2 className=" " >Welcome to tickets book system </h2>
+                 <img src="assets/img/london.jpg"/>
+             </div><br />
+              <div className="row align-items-center justify-content-center">
+                  <div className="col-md-8">
                       {routes.map((route, i) =>
                           <Route
                               key={i}
