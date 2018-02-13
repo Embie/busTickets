@@ -20,6 +20,7 @@ const iconStyles = {
 class Navbar extends Component {
   render() {
     return (
+<<<<<<< HEAD
 <div class="container">
 
     <nav class="navbar navbar-expand-sm bg-light navbar-light ">
@@ -29,6 +30,12 @@ class Navbar extends Component {
         </a>
         <ul class="navbar-nav ">
             <li class="nav-item active ">
+=======
+<div className="container">
+    <nav className="navbar navbar-expand-sm bg-light navbar-light ">
+        <ul className="navbar-nav ">
+            <li className="nav-item active ">
+>>>>>>> 34cdaddacb828b3c34a3975609df7c503c49f9e4
             {<RaisedButton
                 label="Home"
                 key="Home"
@@ -38,7 +45,7 @@ class Navbar extends Component {
                 icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
             />}
             </li>
-            <li class="nav-item active">
+            <li className="nav-item active">
                 {<RaisedButton
                     label="busseats"
                     key="busseats"
@@ -48,7 +55,11 @@ class Navbar extends Component {
                     icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
                 />}
             </li>
+<<<<<<< HEAD
             <li class="nav-item active  float-xs-right">
+=======
+            <li className="nav-item active">
+>>>>>>> 34cdaddacb828b3c34a3975609df7c503c49f9e4
                 {<RaisedButton
                     label="Login"
                     key="Login"

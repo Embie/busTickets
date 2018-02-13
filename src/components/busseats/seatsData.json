@@ -1,0 +1,44 @@
+{
+  "seatsData": [
+    {
+      "seatNumber": 0,
+      "status": "free"
+    },
+    {
+      "seatNumber": 1,
+      "status": "free"
+    },
+    {
+      "seatNumber": 2,
+      "status": "free"
+    },
+    {
+      "seatNumber": 3,
+      "status": "free"
+    },
+    {
+      "seatNumber": 4,
+      "status": "free"
+    },
+    {
+      "seatNumber": 5,
+      "status": "free"
+    },
+    {
+      "seatNumber": 6,
+      "status": "free"
+    },
+    {
+      "seatNumber": 7,
+      "status": "free"
+    },
+    {
+      "seatNumber": 8,
+      "status": "free"
+    },
+    {
+      "seatNumber": 9,
+      "status": "free"
+    }
+  ]
+}
