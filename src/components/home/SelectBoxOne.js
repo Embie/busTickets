@@ -1,10 +1,9 @@
 import React from 'react';
-const options = ["Select an Option", "First Option", "Second Option", "Third Option"]
+const options = ["Пловдив", "София", "Бургас", "Варна"]
 class SelectBoxOne extends React.Component {
     constructor(props) {
       super(props);
-      
-      this.state = { value: 'select'};
+      this.state = { value: 'Пловдив'};
     }
     onChange(e) {
       this.setState({
@@ -16,10 +15,9 @@ class SelectBoxOne extends React.Component {
         <div className="form-group ">
           <label htmlFor="select1" >Oт</label>
           <select value={this.state.value} onChange={this.onChange.bind(this)} className="form-control" >
-            <option value="select">Select an Option</option>
-            <option value="First">First</option>
-            <option value="Second">Second</option>
-            <option value="Third">Third</option>
+          {options.map(option => {
+            return <option value={option} key={option} >{option}</option>
+          })}
           </select>
         </div>
       )

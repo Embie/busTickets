@@ -14,11 +14,7 @@ class ContactInfo extends React.Component {
                         <div>
                             <strong>Information:</strong> 0882091221.
                         </div>
-                        <div>
-                            <strong>Information:</strong> 0882091232.
-                        </div>
                     </div>
-
                 </div>
                 <br />
             </div>

@@ -9,7 +9,6 @@ class BusSeats extends Component {
         super(props);
 
         this.state = {
-
             selectedSeats: [],
             seatsData: []
         };

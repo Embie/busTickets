@@ -1,25 +1,20 @@
 body {
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-    background-color:red;
+  background-image: url("./assets/img/background.jpeg");
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+    margin: 0;
+    font-family: sans-serif;
 }
 #contain
-{
-    background-color:red;
-    background-image: url("./assets/img/p.jpeg");
-    background-repeat: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- opacity: 0.;
-=======
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
->>>>>>> 34cdaddacb828b3c34a3975609df7c503c49f9e4
+{ 
+    padding-bottom:4%;
 }
 
 .login-form {
@@ -90,4 +85,18 @@ body {
 .Bus {
     width: 250px;
     height: 350px;
+}
+
+.page-info{
+    color:white ;
+    text-shadow: #2d2d2d;
+    font-size:300%;
+    text-align:center;
+    margin-top: 0%;
+    padding-bottom: 3%;
+}
+
+#logo{
+    width: 120px;
+    height: 60px;
 }

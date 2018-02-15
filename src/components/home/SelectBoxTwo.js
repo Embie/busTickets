@@ -1,12 +1,11 @@
 import React from 'react';
-
-const options = ["Select an Option", "First Option", "Second Option", "Third Option"]
+const options = ["Пловдив", "София", "Бургас", "Варна"]
 
 class SelectBoxTwo extends React.Component {
     constructor(props) {
       super(props);
       
-      this.state = { value: 'Select an Option'};
+      this.state = { value: 'Пловдив'};
     }
     onChange(e) {
       this.setState({

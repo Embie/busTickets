@@ -22,25 +22,25 @@ class CollectInformation extends Component {
 
     render() {
         return (
-            <Paper zDepth={2}>
-
-                <Tabs
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                >
-                    <Tab label="Search your trip " value="b" icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
-                        <Search/>
-                    </Tab>
-                    <Tab label="Information for All Linees" value="a"  icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
-                        <ResultFromSearchForm/>
-                    </Tab>
-                    <Tab label="Book your ticket" value="c"  icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
-                        <ContactInfo/>
-                    </Tab>
-                </Tabs>
-
-            </Paper>
-
+            <div>
+                <h2 className="page-info">Online Bus Ticket Booking </h2>
+                <Paper zDepth={2}>
+                    <Tabs
+                        value={this.state.value}
+                        onChange={this.handleChange}
+                    >
+                        <Tab label="Search your trip " value="b" icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
+                            <Search/>
+                        </Tab>
+                        <Tab label="Information for All Linees" value="a"  icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
+                            <ResultFromSearchForm/>
+                        </Tab>
+                        <Tab label="Book your ticket" value="c"  icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
+                            <ContactInfo/>
+                        </Tab>
+                    </Tabs>
+              </Paper>
+        </div>
         );
     }
 }

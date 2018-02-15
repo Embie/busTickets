@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
-//import  CitiesField from './components/home/CitiesField';
 import  NavBar from './components/header/NavBar';
 import  ResultFromSearchForm from './components/home/ResultFromSearchForm';
 import Registration from './components/login/Registration';
-//import LineList from './components/home/LineList';
 import SignUp from './components/login/SignUp';
 import Profile from './components/profile/Profile';
 import BusSeats from './components/busseats/BusSeats';
 import CollectInformation from './components/home/CollectInformation';
-
 import Select from 'react-select';
 import  './App.css';
 import  SignUpAndRegistration from './components/login/SignUpAndRegistration';
@@ -61,7 +57,6 @@ class App extends Component {
           <div className="container" id="contain" >
               <div className="row">
                   <div className="col-md-12">
-
                       {routes.map((route, i) =>
                           <Route
                               key={i}
@@ -73,8 +68,6 @@ class App extends Component {
                   </div>
               </div>
              <div className="row align-items-center justify-content-center">
-                 <h2 className=" " >Welcome to tickets book system </h2>
-                 <img src="assets/img/london.jpg"/>
              </div><br />
               <div className="row align-items-center justify-content-center">
                   <div className="col-md-8">
