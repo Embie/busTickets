@@ -39,6 +39,30 @@
     {
       "seatNumber": 9,
       "status": "free"
+    },
+    {
+      "seatNumber": 10,
+      "status": "free"
+    },
+    {
+      "seatNumber": 11,
+      "status": "free"
+    },
+    {
+      "seatNumber": 12,
+      "status": "free"
+    },
+    {
+      "seatNumber": 13,
+      "status": "free"
+    },
+    {
+      "seatNumber": 14,
+      "status": "free"
+    },
+    {
+      "seatNumber": 15,
+      "status": "free"
     }
   ]
 }

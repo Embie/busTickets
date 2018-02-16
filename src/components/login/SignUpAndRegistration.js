@@ -21,19 +21,19 @@ class SignUpAndRegistration extends Component {
     
       render() {
         return (  
-          <Paper zDepth={2}> 
-            <Tabs
-              value={this.state.value}
-              onChange={this.handleChange}
-            >
-              <Tab label="Login" value="b">
-                  <SignUp/>
-              </Tab>
-              <Tab label="Registration" value="a">
-                  <Registration/>
-              </Tab>
-            </Tabs>
-         </Paper>
+        <Paper zDepth={2}> 
+          <Tabs
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <Tab label="Login" value="a">
+                <SignUp/>
+            </Tab>
+            <Tab label="Registration" value="b">
+                <Registration/>
+            </Tab>
+          </Tabs>
+        </Paper>
     );
   }
 }

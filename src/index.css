@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-image: url("./assets/img/background.jpeg");
-    background-repeat: no-repeat center center fixed;
+  background-repeat: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -21,12 +21,11 @@ class Navbar extends Component {
   render() {
     return (
 <div class="container">
-
     <nav class="navbar navbar-expand-sm bg-light navbar-light ">
         <a class="navbar-brand" href="#">
             <img src={Logo} className="d-inline-block align-top logo" alt="logo" id="logo"/>
         </a>
-        <ul class="navbar-nav ">
+        <ul className="navbar-nav ">
             <li class="nav-item active ">
             {<RaisedButton
                 label="Home"
@@ -37,7 +36,7 @@ class Navbar extends Component {
                 icon={<span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span>}
             />}
             </li>
-            <li className="nav-item active">
+            <li className="nav-item ">
                 {<RaisedButton
                     label="busseats"
                     key="busseats"

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { FormErrors } from './FormErrors';
+import {
+  Link,
+
+} from 'react-router-dom';
 
 
 class SingUp extends Component {
@@ -52,7 +56,9 @@ class SingUp extends Component {
   errorClass(error) {
     return(error.length === 0 ? '' : 'has-error');
   }
-
+ Login() {
+  return "<Link className='HeaderLink' to='/busseats'>";
+}
   render () {
     return (
       <form className="demoForm">
@@ -76,7 +82,11 @@ class SingUp extends Component {
             value={this.state.password}
             onChange={this.handleUserInput}  />
         </div>
-        <button type="submit" className="btn btn-primary" disabled={!this.state.formValid}>Sign up</button>
+        <Link className='btn btn-primary' to='/busseats'>SingUp</Link>
+        <br/><br/>
+        <div>
+            <Link className='' to='#'>Forgot your password?</Link>
+        </div>
         <br/> <br />
       </form>
     )
