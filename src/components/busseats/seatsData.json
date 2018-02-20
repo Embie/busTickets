@@ -10,11 +10,11 @@
     },
     {
       "seatNumber": 2,
-      "status": "free"
+      "status": "reserved"
     },
     {
       "seatNumber": 3,
-      "status": "free"
+      "status": "reserved"
     },
     {
       "seatNumber": 4,
@@ -62,6 +62,94 @@
     },
     {
       "seatNumber": 15,
+      "status": "free"
+    },
+    {
+      "seatNumber": 16,
+      "status": "free"
+    },
+    {
+      "seatNumber": 17,
+      "status": "free"
+    },
+    {
+      "seatNumber": 18,
+      "status": "free"
+    },
+    {
+      "seatNumber": 19,
+      "status": "free"
+    },
+    {
+      "seatNumber": 20,
+      "status": "free"
+    },
+    {
+      "seatNumber": 21,
+      "status": "free"
+    },
+    {
+      "seatNumber": 22,
+      "status": "free"
+    },
+    {
+      "seatNumber": 23,
+      "status": "free"
+    },
+    {
+      "seatNumber": 24,
+      "status": "free"
+    },
+    {
+      "seatNumber": 25,
+      "status": "free"
+    },
+    {
+      "seatNumber": 26,
+      "status": "free"
+    },
+    {
+      "seatNumber": 27,
+      "status": "free"
+    },
+    {
+      "seatNumber": 28,
+      "status": "free"
+    },
+    {
+      "seatNumber": 29,
+      "status": "free"
+    },
+    {
+      "seatNumber": 30,
+      "status": "free"
+    }, {
+      "seatNumber": 31,
+      "status": "free"
+    },
+     {
+      "seatNumber": 32,
+      "status": "free"
+    }, {
+      "seatNumber": 33,
+      "status": "free"
+    }, {
+      "seatNumber": 34,
+      "status": "free"
+    }, {
+      "seatNumber": 35,
+      "status": "free"
+    }, {
+      "seatNumber": 36,
+      "status": "free"
+    }, {
+      "seatNumber": 37,
+      "status": "free"
+    }, {
+      "seatNumber": 38,
+      "status": "free"
+    }, {
+      "seatNumber": 39,
       "status": "free"
     }
   ]

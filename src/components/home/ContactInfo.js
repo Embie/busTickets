@@ -5,9 +5,9 @@ class ContactInfo extends React.Component {
         return (
             <div className="ContactInfo">
                 <br/>
-                <div class="container">
+                <div className="container">
                     <h3>Contacts</h3>
-                    <div class="alert alert-info">
+                    <div className="alert alert-info">
                        <div>
                            <strong>Reservation:</strong> 0882091255.
                        </div>

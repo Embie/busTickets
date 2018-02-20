@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -8,21 +10,13 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.9;
     margin: 0;
     font-family: sans-serif;
 }
 #contain
 { 
     padding-bottom:4%;
-}
-
-.login-form {
-    border: 1px solid red;
-}
-
-.TownSearch {
-    border: 1px solid red;
 }
 
 .Login {
@@ -41,15 +35,15 @@ body {
 
 .seats-selector .seats-container {
     position: absolute;
-    top: 165px;
-    left: 95px;
+    top: 200px;
+    left: 45px;
 }
 
 .bus-row {
     min-height: 35px;
 }
 .bus-seats {
-    width:66px;
+    width:87px;
 }
 .bus-seats:last-child {
     text-align:right;
@@ -63,8 +57,9 @@ body {
     text-align: center;
     display: inline-block;
     margin: 0 1px;
+  
     color: #fff;
-    background-color: #a2a2a2;
+    background-color:#7e7d7d;
     font-size: 12px;
     border-bottom: 5px solid #2d2d2d;
 }
@@ -75,28 +70,83 @@ body {
 
 
 .bus-seat-reserved {
-    background-color: red;
+    background-color: #980303;
+    pointer-events: none;
 }
 
 .bus-seat-selected {
-    background-color: blue;
+    background-color:#2483F7;
+}
+.bus-seats-container{
+    
 }
 
-.Bus {
-    width: 250px;
-    height: 350px;
-}
-
-.page-info{
-    color:white ;
-    text-shadow: #2d2d2d;
-    font-size:300%;
-    text-align:center;
-    margin-top: 0%;
-    padding-bottom: 3%;
-}
 
 #logo{
     width: 120px;
     height: 60px;
+}
+.seats-main{  
+    background-color:white; 
+    padding: 30px; 
+}
+.seats-main h2 {
+    color:	#B9C11C;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.seats-main h5{
+    color: #000000;
+    text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.seats-content{
+    float: left;
+   
+}
+.booking-details {
+    float: left;
+    margin: 50px;
+}
+.booking-details h2 {
+	margin: 25px 0 20px 0;
+	font-size: 17px;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.checkout-button {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    background:	#B9C11C;
+    border: none;
+    color: #fff;
+    padding: 11px 23px;
+    outline: none;
+	cursor:pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.free{
+    border: #980303;
+    background-color: #2483F7;
+    height: 32px;
+    width: 32px;
+    line-height: 31px;	
 }

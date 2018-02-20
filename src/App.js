@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import  NavBar from './components/header/NavBar';
-import  ResultFromSearchForm from './components/home/ResultFromSearchForm';
-import Registration from './components/login/Registration';
-import SignUp from './components/login/SignUp';
-import Profile from './components/profile/Profile';
 import BusSeats from './components/busseats/BusSeats';
-import CollectInformation from './components/home/CollectInformation';
+import Home from './components/home/Home';
+import  SignUpAndRegistration from './components/login/SignUpAndRegistration';
 import Select from 'react-select';
 import  './App.css';
-import  SignUpAndRegistration from './components/login/SignUpAndRegistration';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -29,7 +26,7 @@ const routes = [
       path:'/',
       exact:true,
       header: () => <NavBar/>,
-      left: () => <CollectInformation/>,
+      left: () => <Home/>,
 
      
   },
@@ -72,7 +69,7 @@ class App extends Component {
               <div className="row align-items-center justify-content-center">
                   <div className="col-md-8">
                       {routes.map((route, i) =>
-                          <Route
+                         <Route
                               key={i}
                               path={route.path}
                               exact={route.exact}
@@ -80,7 +77,6 @@ class App extends Component {
                           />
                       )}
                   </div>
-              
                   <div className="col-md-6">
                       {routes.map((route, i) =>
                           <Route

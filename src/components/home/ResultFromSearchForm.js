@@ -56,9 +56,9 @@ return (<Link className="btn btn-info btn-md btn-block" to="/login">Book</Link>)
 class ResultFromSearchForm extends Component {
   render() {
     return (
-      <div class="container"> <br />
-        <div class="row">
-          <div class="col-md-12">
+      <div className="container"> <br />
+        <div className="row">
+          <div className="col-md-12">
             <div className="ResultFromSearchForm">
               <BootstrapTable data={ products }
                insertRow={ true } 
