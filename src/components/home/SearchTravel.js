@@ -4,7 +4,7 @@ import SelectBoxTwo from './SelectBoxTwo';
 import DatePicker from 'material-ui/DatePicker';
 import { Paper } from 'material-ui';
 
-class Search  extends Component {
+class SearchTravel extends Component {
     constructor(props){
       super(props)
       this.state={
@@ -50,4 +50,4 @@ class Search  extends Component {
       )
     }
   }
-  export default Search;
+  export default SearchTravel;

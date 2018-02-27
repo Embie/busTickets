@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Search from './Search';
-import ResultFromSearchForm from './ResultFromSearchForm';
-import ContactInfo from './ContactInfo';
+import SearchTravel from './SearchTravel';
+import ShowTravelInformation from './ShowTravelInformation';
+import Contact from './Contact';
 import { Paper,Tabs,Tab } from 'material-ui';
 import FontIcon from 'material-ui/FontIcon';
 import ActionFlightTakeoff from 'material-ui/svg-icons/action/flight-takeoff';
@@ -30,19 +30,19 @@ class Home extends Component {
                             label="Search your trip " 
                             value="a" 
                             icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
-                            <Search/>
+                            <SearchTravel/>
                         </Tab>
                         <Tab 
                             label="Information for All Linees" 
                             value="b"  
                             icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
-                            <ResultFromSearchForm/>
+                            <ShowTravelInformation/>
                         </Tab>
                         <Tab 
-                            label="Book your ticket" 
+                            label="Contact" 
                             value="c"  
                             icon={<FontIcon className="muidocs-icon-action-home" ></FontIcon>}>
-                            <ContactInfo/>
+                            <Contact/>
                         </Tab>
                     </Tabs>
               </Paper>

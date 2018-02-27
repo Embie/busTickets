@@ -10,21 +10,45 @@ import {
 var products = [{
   id: 1,
   date: "12/01/2018",
-  hour:"13:30",
-  line:"Plovdiv-S0fia",
+  hour:"14:30",
+  line:"Varna-S0fia",
   price: 8, 
 },
 {
   id: 2,
   date: "12/01/2018",
   hour:"13:30",
-  line:"Plovdiv-S0fia",
+  line:"Haskovo-S0fia",
   price: 8, 
 },
 {
   id: 3,
   date: "12/01/2018",
-  hour:"13:30",
+  hour:"12:30",
+  line:"Pazardjik-Sofia",
+  price: 8, 
+  
+},
+{
+  id: 3,
+  date: "12/01/2018",
+  hour:"16:30",
+  line:"Plovdiv-Sofia",
+  price: 8, 
+  
+},
+{
+  id: 3,
+  date: "12/01/2018",
+  hour:"16:30",
+  line:"Plovdiv-Sofia",
+  price: 8, 
+  
+},
+{
+  id: 3,
+  date: "12/01/2018",
+  hour:"18:30",
   line:"Plovdiv-Sofia",
   price: 8, 
   
@@ -40,6 +64,8 @@ const options = {
   deleteText: 'Delete',
   saveText: 'Save',
   closeText: 'Close'
+  
+ 
 }
 // If you want to enable deleteRow, you must enable row selection also.
 const selectRowProp = {
@@ -53,26 +79,38 @@ const cellEditProp = {
 function BookTicket(){
 return (<Link className="btn btn-info btn-md btn-block" to="/login">Book</Link>);
 }
-class ResultFromSearchForm extends Component {
+class ShowTravelInformation extends Component {
   render() {
     return (
-      <div className="container"> <br />
+      <div className="container">
+        <div className="row">
+            <div className="col-md-12">
+                <hr/>
+                <h2>Informations</h2>
+                <hr/>
+            </div>
+        </div><br/>
         <div className="row">
           <div className="col-md-12">
-            <div className="ResultFromSearchForm">
+            <div className="ShowTravelInformation">
               <BootstrapTable data={ products }
-               insertRow={ true } 
+              search={true}
+              searchPlaceholder='Enter city'
+               insertRow
                cellEdit={ cellEditProp }
                 deleteRow={ true } 
                 selectRow={ selectRowProp } 
                 exportCSV={ true }
-                options={ options }>
+                clearSearch={true} 
+                options={ options }
+                striped
+                 >
                   <TableHeaderColumn dataField='id' isKey hidden>ID</TableHeaderColumn>
                   <TableHeaderColumn dataField='date'>Дата</TableHeaderColumn>
-                  <TableHeaderColumn dataField='hour'>Час</TableHeaderColumn>
-                  <TableHeaderColumn dataField='line'>Линия</TableHeaderColumn>
+                  <TableHeaderColumn dataField='hour'  searchable={ true }>Час</TableHeaderColumn>
+                  <TableHeaderColumn dataField='line' searchable={ true }>Линия</TableHeaderColumn>
                   <TableHeaderColumn dataField='price'>Цена</TableHeaderColumn>
-                  <TableHeaderColumn dataField="Link"  editable={ false } dataFormat={BookTicket}></TableHeaderColumn>
+                  <TableHeaderColumn dataField='Link'  insertRow={ false }   dataFormat={BookTicket}></TableHeaderColumn>
               </BootstrapTable>
             </div>
           </div>
@@ -82,4 +120,4 @@ class ResultFromSearchForm extends Component {
   }
 }
 
-export default ResultFromSearchForm;
+export default ShowTravelInformation;
