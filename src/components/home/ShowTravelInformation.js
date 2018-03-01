@@ -103,6 +103,8 @@ class ShowTravelInformation extends Component {
                 exportCSV={ true }
                 clearSearch={true} 
                 options={ options }
+                responsive={true}
+                width={window.innerWidth < 406 ? '0' : '5%'}
                 striped
                  >
                   <TableHeaderColumn dataField='id' isKey hidden>ID</TableHeaderColumn>
@@ -110,7 +112,7 @@ class ShowTravelInformation extends Component {
                   <TableHeaderColumn dataField='hour'  searchable={ true }>Час</TableHeaderColumn>
                   <TableHeaderColumn dataField='line' searchable={ true }>Линия</TableHeaderColumn>
                   <TableHeaderColumn dataField='price'>Цена</TableHeaderColumn>
-                  <TableHeaderColumn dataField='Link'  insertRow={ false }   dataFormat={BookTicket}></TableHeaderColumn>
+                  <TableHeaderColumn dataField='Link' insertRow={ false }   dataFormat={BookTicket}></TableHeaderColumn>
               </BootstrapTable>
             </div>
           </div>

@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("./assets/img/background.jpeg");
+  background-image: url("./assets/img/4.png");
   background-repeat: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  
+  background-color: #CDD7E3;
     margin: 0;
     font-family: sans-serif;
 }
@@ -87,7 +87,7 @@ body {
     padding: 30px; 
 }
 .seats-main h2 {
-    color:	#B9C11C;
+    color: rgb(55, 142, 248);
     font-size: 23px;
     text-align: center;
     padding-top: 10px;
@@ -122,7 +122,7 @@ body {
     display: block;
     margin: 10px 0;
     font-size: 16px;
-    background:	#B9C11C;
+    background:rgb(55, 142, 248);
     border: none;
     color: #fff;
     padding: 11px 23px;
@@ -152,7 +152,7 @@ body {
     border-radius: 7px;
     margin: 6px 8px;
     padding: 6px 8px;
-    background-color:#06B8DC;
+    background-color: rgb(45, 186, 218);
 }
 
 .contactInfo .container form input,select,textarea{
@@ -172,7 +172,7 @@ body {
 }
 .contactInfo .container form input[type=submit] {
     background-color:floralwhite;
-    color: #06B8DC;
+    color: #2483F7;
     padding: 6px;
     border: none;
     border-radius: 4px;
@@ -186,4 +186,22 @@ body {
 .container{
     margin-top:12px 15px;
     padding: 12px 15px;
+}
+
+.hello{
+
+    color: #fff;
+    text-align: center;
+    font-size: 500%;
+    margin: 10px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.t{
+    color: rgb(138, 204, 218);
+}
+footer {
+    color: #fff;
+    text-align: center;
+    margin: 20px;
 }

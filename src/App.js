@@ -25,7 +25,6 @@ const routes = [
   {
       path:'/',
       exact:true,
-      header: () => <NavBar/>,
       left: () => <Home/>,
 
      
@@ -33,8 +32,7 @@ const routes = [
   {
       path:'/login',
       exact:true,
-      header:() =><NavBar/>,
-      right: () => <SignUpAndRegistration/>,
+      left: () => <SignUpAndRegistration/>,
     
       
   },
@@ -67,7 +65,7 @@ class App extends Component {
              <div className="row align-items-center justify-content-center">
              </div><br />
               <div className="row align-items-center justify-content-center">
-                  <div className="col-md-8">
+                  <div className="col-md-10">
                       {routes.map((route, i) =>
                          <Route
                               key={i}
