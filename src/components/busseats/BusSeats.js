@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import busImage from '../../assets/img/bus_seats.png'
 import RaisedButton from 'material-ui/RaisedButton';
+import Company from '../header/Company.js';
 import { Link } from 'react-router-dom';
 import Api from '../../Api'
 const jsonData = require('./seatsData.json');
@@ -107,19 +108,10 @@ class BusSeats extends Component {
     render() {
         return (
             <div>
-                <ul className="navbar-nav ">
-                    <li className="nav-item active ">
-                    {<RaisedButton
-                        label="Home"
-                        key="Home"
-                        
-                        containerElement={<Link className="HeaderLink" to="/"></Link>}
-                    />}
-                    </li>
-                </ul>
+                <Link className="btn btn-info btn-log float-right" to="/">LOGOUT</Link>
+                <br/>  <br/>  <br/>
             <div  className ="seats-main">
-             
-                <h2>Book Your Seat Now?</h2>
+               <h2>Book Your Seat Now?</h2>
                 <div className="seats-content">
                     <div className="seats-selector">
                         <h5>Избери места:</h5> 

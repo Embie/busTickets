@@ -39,7 +39,7 @@ const routes = [
   {
     path:'/busseats',
     exact:true,
-    header:() =><NavBar/>,
+   
     left: () => <BusSeats/>,
     
 }

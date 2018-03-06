@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("./assets/img/4.png");
+  background-image: url("./assets/img/background.jpeg");
   background-repeat: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,15 +79,16 @@ body {
 }
 
 #logo{
-    width: 120px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+   
 }
 .seats-main{  
     background-color:white; 
     padding: 30px; 
 }
 .seats-main h2 {
-    color: rgb(55, 142, 248);
+    color: #BBBD2A;
     font-size: 23px;
     text-align: center;
     padding-top: 10px;
@@ -122,7 +123,7 @@ body {
     display: block;
     margin: 10px 0;
     font-size: 16px;
-    background:rgb(55, 142, 248);
+    background:#BBBD2A;
     border: none;
     color: #fff;
     padding: 11px 23px;
@@ -184,24 +185,24 @@ body {
     background-color:floralwhite;
 }
 .container{
-    margin-top:12px 15px;
-    padding: 12px 15px;
+    
 }
 
 .company{
 
-    color: #fff;
+    color:#BBBD2A;
     text-align: center;
     font-size: 500%;
     margin: 10px;
     padding-bottom: 20px;
     text-transform: uppercase;
 }
-.t{
-    color: rgb(138, 204, 218);
-}
+
 footer {
     color: #fff;
     text-align: center;
     margin: 20px;
+}
+.btn-log{
+    margin:5px;
 }

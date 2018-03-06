@@ -4,7 +4,7 @@ import SignUp from './SignUp';
 import Registration from './Registration';
 import Paper from 'material-ui/Paper';
 import Company from '../header/Company.js';
-
+import { Link } from 'react-router-dom';
 class SignUpAndRegistration extends Component {
     constructor(props) {
         super(props);
@@ -22,6 +22,7 @@ class SignUpAndRegistration extends Component {
       render() {
         return ( 
         <div>
+           
             <Company/>
             <Paper zDepth={2}> 
               <Tabs
