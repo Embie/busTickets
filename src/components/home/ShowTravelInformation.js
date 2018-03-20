@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
-import { FlatButton } from 'material-ui/FlatButton';
-import DeleteButton from 'react-bootstrap-table/lib/toolbar/DeleteButton';
+
 import {
   Link,
 
@@ -11,21 +10,21 @@ var products = [{
   id: 1,
   date: "12/01/2018",
   hour:"14:30",
-  line:"Varna-S0fia",
+  line:"Plovdiv-Sofia",
   price: 8, 
 },
 {
   id: 2,
   date: "12/01/2018",
   hour:"13:30",
-  line:"Haskovo-S0fia",
+  line:"Plovdiv-Sofia",
   price: 8, 
 },
 {
   id: 3,
   date: "12/01/2018",
   hour:"12:30",
-  line:"Pazardjik-Sofia",
+  line:"Plovdiv-Sofia",
   price: 8, 
   
 },
@@ -54,10 +53,6 @@ var products = [{
   
 },
 ];
-function onAfterDeleteRow(rowKeys) {
-  alert('The rowkey you drop: ' + rowKeys);
-}
-
 const options = {
   exportCSVText: 'Export',
   insertText: 'Add',
@@ -77,7 +72,7 @@ const cellEditProp = {
 };
 
 function BookTicket(){
-return (<Link className="btn btn-info btn-md btn-block" to="/login">Book</Link>);
+  return (<Link className="btn btn-info btn-md btn-block" to="/login">Book</Link>);
 }
 class ShowTravelInformation extends Component {
   render() {
@@ -86,7 +81,7 @@ class ShowTravelInformation extends Component {
         <div className="row">
             <div className="col-md-12">
                 <hr/>
-                <h2>Informations</h2>
+                  <h5>Result from Search</h5>
                 <hr/>
             </div>
         </div><br/>

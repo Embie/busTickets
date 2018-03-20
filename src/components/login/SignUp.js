@@ -61,33 +61,36 @@ class SingUp extends Component {
 }
   render () {
     return (
-      <form className="demoForm">
-        <br/>
+      <form className="demoForm"><br/>
         <h2>Your reservation login</h2>
         <div className="panel panel-default">
           <FormErrors formErrors={this.state.formErrors} />
         </div>
         <div className={`form-group ${this.errorClass(this.state.formErrors.email)}`}>
-            <p>To view or cancel your reservation, we need the following information from you</p>
+          <p>To view or cancel your reservation, we need the following information from you</p>
           <label htmlFor="email">Email address</label>
-          <input type="email" required className="form-control" name="email"
+          <input 
+            type="email" 
+            required className="form-control" 
+            name="email"
             placeholder="Email"
             value={this.state.email}
             onChange={this.handleUserInput}  />
         </div>
         <div className={`form-group ${this.errorClass(this.state.formErrors.password)}`}>
           <label htmlFor="password">Password</label>
-          <input type="password" className="form-control" name="password"
+          <input 
+            type="password" 
+            className="form-control" 
+            name="password"
             placeholder="Password"
             value={this.state.password}
             onChange={this.handleUserInput}  />
         </div>
-        <Link className='btn btn-primary' to='/busseats'>SingUp</Link>
-        <br/><br/>
+        <Link className='btn btn-primary' to='/busseats'>SingUp</Link><br/><br/>
         <div>
-            <Link className='' to='#'>Forgot your password?</Link>
-        </div>
-        <br/> <br />
+          <Link className='' to='#'>Forgot your password?</Link>
+        </div><br/>
       </form>
     )
   }

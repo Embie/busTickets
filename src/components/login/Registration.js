@@ -23,7 +23,7 @@ class Registration extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({[name]: value},
-                  () => { this.validateField(name, value) });
+      () => { this.validateField(name, value) });
   }
 
   validateField(fieldName, value) {
@@ -53,11 +53,11 @@ class Registration extends Component {
         break;
     }
     this.setState({formErrors: fieldValidationErrors,
-                    nameValid:nameValid,
-                    emailValid: emailValid,
-                    passwordValid: passwordValid,
-                    phoneValid:phoneValid
-                  }, this.validateForm);
+      nameValid:nameValid,
+       emailValid: emailValid,
+       passwordValid: passwordValid,
+       phoneValid:phoneValid
+       }, this.validateForm);
   }
 
   validateForm() {
@@ -105,7 +105,7 @@ class Registration extends Component {
             onChange={this.handleUserInput}  />
         </div>
         <button type="submit" className="btn btn-success" disabled={!this.state.formValid}>Registrate</button>
-        <br /> <br />
+        <br />   <br /> 
       </form>
     )
   }

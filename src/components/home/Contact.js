@@ -37,7 +37,7 @@ class Contact extends React.Component {
                                 <form action="">
                                     <div className="row">
                                         <div className="col-md-5">
-                                            <label for="fname">First Name</label>
+                                            <label htmlFor="fname">First Name</label>
                                         </div>
                                         <div className="col-md-7">
                                             <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
@@ -45,7 +45,7 @@ class Contact extends React.Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-md-5">
-                                            <label for="email">Email</label>
+                                            <label htmlFor="email">Email</label>
                                         </div>
                                         <div className="col-md-7">
                                             <input type="text" id="email" name="email" placeholder="example@abv.bg"/>
@@ -53,7 +53,7 @@ class Contact extends React.Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-md-5">
-                                            <label for="subject">Subject</label>
+                                            <label htmlFor="subject">Subject</label>
                                         </div>
                                         <div className="col-md-7">
                                             <textarea  rows="5" cols="50" id="subject" name="subject" placeholder="Write something.."></textarea>
@@ -78,7 +78,7 @@ class Contact extends React.Component {
                             <div>
                                 <p>
                                     Пловдив, България
-                                    бул. "6-ти Септември" 152, ет. 3, офис 9
+                                    бул. "6-ти Септември" 
                                 </p>
                                 <div>
                                     <MapWrapper/>

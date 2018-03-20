@@ -6,10 +6,13 @@ class SelectBoxOne extends React.Component {
       return (
         <div className="form-group ">
           <label htmlFor="select1" >Oт</label>
-          <select value={this.props.value} onChange={this.props.onChange} className="form-control" >
-              {options.map(option => {
+          <select
+             value={this.props.value} 
+             onChange={this.props.onChange} 
+             className="form-control" >
+             {options.map(option => {
                 return <option value={option} key={option} >{option}</option>
-          })}
+             })}
           </select>
         </div>
       )

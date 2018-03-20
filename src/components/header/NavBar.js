@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/logo.jpg'
+import Logo from '../../assets/img/city.png'
   const styles = {
     button: {
         marginLeft: 5,
@@ -11,45 +11,36 @@ import Logo from '../../assets/img/logo.jpg'
 class Navbar extends Component {
   render() {
     return (
-        <div className="container">
-            <nav className="navbar navbar-expand-sm bg-light navbar-light ">
-                <a className="navbar-brand" href="#">
-                    <img src={Logo} className="d-inline-block align-top logo" alt="logo" id="logo"/>
-                </a>
-                <ul className="navbar-nav ">
-                    <li className="nav-item active ">
-                    {<RaisedButton
-                        label="Home"
-                        key="Home"
-                        style={styles.button}
-                        labelColor={styles.linkColor}
-                        containerElement={<Link className="HeaderLink" to="/"></Link>}
-                    />}
-                    </li>
-                    <li className="nav-item ">
-                        {<RaisedButton
-                            label="busseats"
-                            key="busseats"
-                            style={styles.button}
-                            labelColor={styles.linkColor}
-                            containerElement={<Link className="HeaderLink" to="/busseats">Reserve Seats</Link>}
-                        />}
+        <div className>
+        <div>
+        </div>
+        
+        <nav className="navbar navbar-dark  navbar-expand-md  " >
+            <a href="/" className="navbar-brand "><img src={Logo} className="d-inline-block align-top logo" alt="logo" id="logo"/></a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul className="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="/">Home</a>
                     </li>
                     <li className="nav-item active">
-                        {<RaisedButton
-                            label="Login"
-                            key="Login"
-                            style={styles.button}
-                            labelColor={styles.linkColor}
-                            containerElement={<Link className="HeaderLink" to="/login">Login</Link>}
-                        />}
+                        <a className="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="/login">Login</a>
                     </li>
                 </ul>
-            </nav>
-            <br />  
+            </div>
+        </nav>
+     
         </div>  
     );
   }
+
+
+  
 }
 
 export default Navbar;

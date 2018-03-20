@@ -1,29 +1,64 @@
 
-
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("./assets/img/background.jpeg");
   background-repeat: no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #CDD7E3;
-    margin: 0;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
+#logo{
+    width: 50px;
+    height: 50px;
+   
+}
+.navbar{
+    background-color: rgb(108, 167, 240);
+    color:white;
+}
+.nav-item{
+    color:white;
+}
+.main-row{
+}
+.bus-img{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px ;
+    border-radius: 20px;
+   
+ }
 #contain
 { 
-    padding-bottom:4%;
+    padding-bottom:7%;
 }
 
 .Login {
     width: 500px;
     margin: auto;
 }
-
+.search{
+   border: 1px solid rgb(228, 225, 225);
+    border-radius: 20px;
+}
+.search h2{
+    text-align: center;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#E67F20;
+}
+.search button{
+    background-color: rgb(108, 167, 240);
+    color:white;
+}
 .demoForm {
     width: 500px;
     margin: auto;
@@ -57,7 +92,6 @@ body {
     text-align: center;
     display: inline-block;
     margin: 0 1px;
-  
     color: #fff;
     background-color:#7e7d7d;
     font-size: 12px;
@@ -78,24 +112,24 @@ body {
     background-color:#2483F7;
 }
 
-#logo{
-    width: 80px;
-    height: 80px;
-   
-}
+
 .seats-main{  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
     background-color:white; 
-    padding: 30px; 
+   padding-left: 50px;
 }
 .seats-main h2 {
-    color: #BBBD2A;
-    font-size: 23px;
+    color:#E67F20;
+    font-size: 29px;
     text-align: center;
-    padding-top: 10px;
+    padding-bottom: 50px;
     text-transform: uppercase;
     font-weight: 600;
 }
-.seats-main h5{
+ h5{
     color: #000000;
     text-align: center;
 	-webkit-border-radius: 3px;
@@ -108,12 +142,9 @@ body {
 }
 .booking-details {
     float: left;
-    margin: 50px;
+    padding: 50px;
 }
-.booking-details h2 {
-	margin: 25px 0 20px 0;
-	font-size: 17px;
-}
+
 .clear::after {
     content: "";
     clear: both;
@@ -123,7 +154,7 @@ body {
     display: block;
     margin: 10px 0;
     font-size: 16px;
-    background:#BBBD2A;
+    background:#E67F20;
     border: none;
     color: #fff;
     padding: 11px 23px;
@@ -184,9 +215,6 @@ body {
 .contactInfo .container form input[type=submit]:hover {
     background-color:floralwhite;
 }
-.container{
-    
-}
 
 .company{
 
@@ -206,3 +234,24 @@ footer {
 .btn-log{
     margin:5px;
 }
+.search{
+    padding: 20px;
+}
+
+.person-img{
+    width: 50%;
+    height: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
+  }
+  .profile h2{
+      text-align: center;
+     
+  }

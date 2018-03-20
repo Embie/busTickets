@@ -1,37 +1,23 @@
 import React, { Component } from 'react';
-
-
+import Personal from '../../assets/img/default.jpeg';
 
 class Profile extends Component {
   render() {
     return (
-        <div className="App">
-            <div>
-                <img src="" />
+      <div className="profile">
+        <div className="card">
+            <h4>Your Profile</h4>
+            <div className="person-img-info">
+            <img  className ="person-img" src={Personal} alt="bus"/>
             </div>
-            <div>
-                <p>Name:</p>
-                <p>email</p>
-                <p>Phone</p>
+            <br/>
+            <div className="person-info">
+                <p><strong>Name:</strong><span> Gergana Georgieva</span></p>
+                <p><strong>Email:</strong><span> geri@gmail.com</span></p>
+                <p><strong>Phone:</strong><span> 088207384</span></p>
             </div>
-            <table>
-            <tr>
-              <th>Дата</th>
-              <th>Час</th>
-              <th>Линия</th>
-              <th>Цена</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>12.03.2016</td>
-              <td>15:00</td>
-              <td>Plovdiv-Sofiq</td>
-              <td>4 lv</td>
-              <td><button>Kupi</button></td>
-            </tr>
-            </table>
-        </div>
-     
+         </div>
+      </div>
     );
   }
 }

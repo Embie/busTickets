@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import busImage from '../../assets/img/bus_seats.png'
-import RaisedButton from 'material-ui/RaisedButton';
-import Company from '../header/Company.js';
+import busImage from '../../assets/img/bus_seats.png';
 import { Link } from 'react-router-dom';
 import Api from '../../Api'
 const jsonData = require('./seatsData.json');
@@ -84,10 +82,10 @@ class BusSeats extends Component {
    
     getSeats = (row, rowIndex) => {
         const seatsOnRow = row.map((seat, i)=> {
-            if(seat.status == "reserved"){
+            if(seat.status === "reserved"){
                 return <div key={i} className="bus-seat bus-seat-reserved">{seat.seatNumber}</div>
             }
-            if(seat.status == "selected"){
+            if(seat.status === "selected"){
                 return <div key={i} className="bus-seat bus-seat-selected" onClick={()=> this.changeSeatState(rowIndex, seat)}>{seat.seatNumber}</div>
             }
             return <div key={i} className="bus-seat" onClick={()=> this.changeSeatState(rowIndex, seat)}>{seat.seatNumber}</div>
@@ -108,27 +106,25 @@ class BusSeats extends Component {
     render() {
         return (
             <div>
-                <Link className="btn btn-info btn-log float-right" to="/">LOGOUT</Link>
-                <br/>  <br/>  <br/>
-            <div  className ="seats-main">
-               <h2>Book Your Seat Now?</h2>
-                <div className="seats-content">
-                    <div className="seats-selector">
-                        <h5>Избери места:</h5> 
-                        <img src={busImage} alt="bus"/>
-                        <div className="seats-container">
-                            {this.createSeats()}
-                        </div>
+                <div  className ="seats-main">
+                    <h2>Book Your Seat Now?</h2>
+                     <div className="seats-content">
+                         <div className="seats-selector">
+                            <h5>Избери места:</h5> 
+                            <img src={busImage} alt="bus"/>
+                             <div className="seats-container">
+                                {this.createSeats()}
+                            </div>
+                         </div>
                     </div>
+                    <div className="booking-details">
+                        <h3> Selected Seats:<span id="counter">{this.state.selectedSeatsCount}</span></h3>
+                        <div>Total: <b>$<span id="total"> {this.CalculatePrice()}</span></b></div>
+                        <button className="checkout-button">Pay Now</button>
+                        <div className="clear"></div>           
+                    </div>
+                    <div className="clear"></div>
                 </div>
-                 <div className="booking-details">
-						<h3> Selected Seats:<span id="counter">{this.state.selectedSeatsCount}</span></h3>
-						<div>Total: <b>$<span id="total"> {this.CalculatePrice()}</span></b></div>
-						<button className="checkout-button">Pay Now</button>
-                        <div className="clear"></div>
-                </div>
-                <div className="clear"></div>
-            </div>
             </div>
         );
     }

@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import  NavBar from './components/header/NavBar';
+import NavBar from './components/header/NavBar';
 import BusSeats from './components/busseats/BusSeats';
 import Home from './components/home/Home';
 import  SignUpAndRegistration from './components/login/SignUpAndRegistration';
-import Select from 'react-select';
+import Promo from './promo/Promo';
+import Profile from './components/profile/Profile';
 import  './App.css';
-
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
-import { Paper } from 'material-ui';
-
-
 const routes = [
   {
       path:'/header',
@@ -25,23 +20,24 @@ const routes = [
   {
       path:'/',
       exact:true,
-      left: () => <Home/>,
-
+      header: () => <NavBar/>,
+      right:() => <Promo/>,
+      left: () => <Home/>
      
   },
   {
       path:'/login',
       exact:true,
-      left: () => <SignUpAndRegistration/>,
-    
-      
+      header: () => <NavBar/>,
+      right:() => <Promo/>,
+      left: () => <SignUpAndRegistration/>
   },
   {
     path:'/busseats',
     exact:true,
-   
+    header: () => <NavBar/>,
+    right:() => <Profile/>,
     left: () => <BusSeats/>,
-    
 }
 ]
 class App extends Component {
@@ -61,11 +57,9 @@ class App extends Component {
                           />
                       )}
                   </div>
-              </div>
-             <div className="row align-items-center justify-content-center">
-             </div><br />
-              <div className="row align-items-center justify-content-center">
-                  <div className="col-md-10">
+              </div> <br/><br/><br/>
+              <div className="row main-row">
+                  <div className="col-md-7">
                       {routes.map((route, i) =>
                          <Route
                               key={i}
@@ -75,7 +69,7 @@ class App extends Component {
                           />
                       )}
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-5">
                       {routes.map((route, i) =>
                           <Route
                               key={i}
@@ -85,8 +79,7 @@ class App extends Component {
                           />
                       )}
                   </div>
-                  </div>
-
+                </div>
             </div>
         </Router>
     </MuiThemeProvider>
