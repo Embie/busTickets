@@ -1,59 +1,110 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import NavBar from './components/header/NavBar';
+import Navigation from './components/navigation/Navigation';
 import BusSeats from './components/busseats/BusSeats';
 import Home from './components/home/Home';
-import  SignUpAndRegistration from './components/login/SignUpAndRegistration';
+import  SignUpAndIn from './components/userAction/SignUpAndIn';
 import Promo from './promo/Promo';
-import Profile from './components/profile/Profile';
+import Account from './components/account/Account';
+import Contact from './components/contact/Contact';
+import PasswordChangeForm from './components/passwordAction/PasswordChange';
+import PasswordForgetPage from './components/passwordForget/PasswordForget';
+import PasswordChange from './components/passwordChange/PasswordChange';
+import MapWrapper from './components/contact/MapWrapper';
+//import Square from './components/busseats/Square';
+//import GeneralConditions from './components/condition/GeneralConditions';
 import  './App.css';
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+import { firebase } from './firebase';
+import Footer from './components/footer/Footer';
+import PasswordForget from './components/passwordForget/PasswordForget';
+//import Users from './components/users';
+
+//import withAuthentication from './components/session/withAuthentication';
+
 const routes = [
-  {
-      path:'/header',
-      exact:true,
-      header: () => <NavBar/>,
-  },
   {
       path:'/',
       exact:true,
-      header: () => <NavBar/>,
       right:() => <Promo/>,
-      left: () => <Home/>
-     
+      left: () => <Home/>  
   },
   {
-      path:'/login',
+      path:'/userAction',
       exact:true,
-      header: () => <NavBar/>,
       right:() => <Promo/>,
-      left: () => <SignUpAndRegistration/>
+      left: () => <SignUpAndIn/>
   },
+  {
+    path:'/password',
+    exact:true,
+    right:() => <PasswordChangeForm/>,
+
+},
+{
+    path:'/passwordChange',
+    exact:true,
+    right:() => <PasswordChangeForm/>,
+
+},
+{
+    path:'/passwordForget',
+    exact:true,
+    right:() => <PasswordForget/>,
+
+},
+  {
+    path:'/contact',
+    exact:true, 
+    right:() => <Promo/>,
+    left: () => <Contact/>
+},
   {
     path:'/busseats',
     exact:true,
-    header: () => <NavBar/>,
-    right:() => <Profile/>,
+    right:() => <Promo/>,
     left: () => <BusSeats/>,
+},
+
+{
+    path:'/account',
+    exact:true,
+    left:() => <Account/>,
+    right:() => <PasswordChangeForm/>,
 }
 ]
 class App extends Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          authUser: null,
+        };
+      }
+      componentDidMount() {
+        firebase.auth.onAuthStateChanged(authUser => {
+          authUser
+            ? this.setState(() => ({ authUser }))
+            : this.setState(() => ({ authUser: null }));
+        });
+      }
+    
   render() {
     return (
     <MuiThemeProvider>
+        <div>
       <Router>
           <div className="container" id="contain" >
               <div className="row">
                   <div className="col-md-12">
+                  <Navigation authUser={this.state.authUser} />
                       {routes.map((route, i) =>
                           <Route
                               key={i}
                               path={route.path}
-                              exact={route.exact}
-                              component={route.header}
                           />
                       )}
                   </div>
@@ -82,8 +133,11 @@ class App extends Component {
                 </div>
             </div>
         </Router>
+        <Footer/>
+        </div>
     </MuiThemeProvider>
     );
   }
 }
-export default App;
+
+export default (App);

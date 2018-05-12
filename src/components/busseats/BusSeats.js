@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import busImage from '../../assets/img/bus_seats.png';
 import { Link } from 'react-router-dom';
-import Api from '../../Api'
+import Api from '../../Api';
 const jsonData = require('./seatsData.json');
 
 class BusSeats extends Component {
@@ -107,10 +107,10 @@ class BusSeats extends Component {
         return (
             <div>
                 <div  className ="seats-main">
-                    <h2>Book Your Seat Now?</h2>
+                    <h2>Book Your Seat Now?</h2> 
                      <div className="seats-content">
                          <div className="seats-selector">
-                            <h5>Избери места:</h5> 
+                            <h5>Избери места:</h5>
                             <img src={busImage} alt="bus"/>
                              <div className="seats-container">
                                 {this.createSeats()}
@@ -118,12 +118,34 @@ class BusSeats extends Component {
                          </div>
                     </div>
                     <div className="booking-details">
-                        <h3> Selected Seats:<span id="counter">{this.state.selectedSeatsCount}</span></h3>
-                        <div>Total: <b>$<span id="total"> {this.CalculatePrice()}</span></b></div>
-                        <button className="checkout-button">Pay Now</button>
-                        <div className="clear"></div>           
+                        <div className="container">
+                            <div className="row">
+                                <div className="info-free">
+                                </div>
+                                <div className="col-md-2">Free
+                                </div>
+                            </div><br/>
+                            <div className="row">
+                                <div className="info-reserved">
+                                </div>
+                                <div className="col-md-4">Reserved
+                                </div>
+                            </div><br/>
+                            <div className="row">
+                                <div className="info-selected">
+                                </div>
+                                <div className="col-md-4">Selected
+                                </div>
+                            </div>
+                         </div> <br /><br /> <br />
+                         <div>
+                            <h3>Seats:<span id="counter">{this.state.selectedSeatsCount}</span></h3>
+                            <p>Total: <b>$<span id="total"> {this.CalculatePrice()}</span></b></p>
+                            <button className="buy-button">Pay Now</button> <br/>
+                            <div className="clear"></div>    
+                        </div>       
                     </div>
-                    <div className="clear"></div>
+                    <div className="clear"></div> 
                 </div>
             </div>
         );

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Tabs,Tab } from 'material-ui/Tabs';
+import SignIn from './SignIn';
 import SignUp from './SignUp';
-import Registration from './Registration';
 import Paper from 'material-ui/Paper';
-import Company from '../header/Company.js';
-class SignUpAndRegistration extends Component {
+import Logo from '../navigation/Logo';
+class SignUpAndIn extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,12 +25,13 @@ class SignUpAndRegistration extends Component {
               <Tabs
                 value={this.state.value}
                 onChange={this.handleChange}
+                
               >
-                <Tab label="Login" value="a">
-                    <SignUp/>
+                <Tab label="Sign In" value="a">
+                    <SignIn/>
                 </Tab>
-                <Tab label="Registration" value="b">
-                    <Registration/>
+                <Tab label="Sign Up" value="b">
+                    <SignUp/>
                 </Tab>
               </Tabs>
             </Paper>
@@ -39,4 +40,4 @@ class SignUpAndRegistration extends Component {
   }
 }
 
-export default SignUpAndRegistration;
+export default SignUpAndIn;

@@ -4,8 +4,8 @@ import ShowTravelInformation from './ShowTravelInformation';
 import Contact from './Contact';
 import { Paper,Tabs,Tab } from 'material-ui';
 import FontIcon from 'material-ui/FontIcon';
-import Company from '../header/Company.js';
-import Footer from '../header/Footer.js';
+import Company from '../navigation/Company.js';
+import Footer from '../footer/Footer';
 
 class Home extends Component {
     constructor(props) {
@@ -21,14 +21,9 @@ class Home extends Component {
     };
     render() {
         return (
-            <div className=""> 
-               
-                
-                 <SearchTravel/>
-                     
-              
-              <Footer/>
-        </div>
+            <div className="home">
+                <SearchTravel/>
+           </div>
         );
     }
 }

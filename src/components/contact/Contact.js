@@ -29,7 +29,7 @@ class Contact extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="">
                             <div className="">
                                 <strong>Get in Touch</strong>
                             </div>
@@ -66,29 +66,16 @@ class Contact extends React.Component {
                                             <input type="submit" value="Submit"/>
                                         </div>
                                     </div>
-                                </form>
+                                </form>  
+                              
                             </div>
+                           <br />
                         </div>
-                        <div className="col-md-6">
-                            <div className="">
-                                <strong>
-                                    Address:
-                                </strong>
-                            </div>
-                            <div>
-                                <p>
-                                    Пловдив, България
-                                    бул. "6-ти Септември" 
-                                </p>
-                                <div>
+                    </div>
+                    <div>
                                     <MapWrapper/>
                                 </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div className="row"> 
-                    </div>
-                </div>
+                </div><br/><br/><br/><br/><br/><br/>
             </div>
         )
     }

@@ -10,11 +10,11 @@ class Contact extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 in">
-                            <h2>Contacts</h2>
+                            <h1>Contacts</h1>
                         </div>
-                    </div>
+                    </div><br/> <br/>
                     <div className="row">
-                        <div className="col-md-12 contact-info">
+                        <div className=" contact-info">
                             <hr/>
                                 <p>
                                     <img src={Telephone} className="contact-icon" alt="phone"/> <strong>0882091243</strong>
@@ -28,26 +28,26 @@ class Contact extends React.Component {
                              <hr/>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-6">
+                    <div className="row container-fluid">
+                        <div className="col-md-12">
                             <div className="">
                                 <strong>Get in Touch</strong>
                             </div>
-                            <div className="">
+                            <div className="form-container">
                                 <form action="">
                                     <div className="row">
-                                        <div className="col-md-5">
+                                        <div className="col-md-3">
                                             <label htmlFor="fname">First Name</label>
                                         </div>
-                                        <div className="col-md-7">
+                                        <div className="col-md-9">
                                             <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-5">
+                                        <div className="col-md-3">
                                             <label htmlFor="email">Email</label>
                                         </div>
-                                        <div className="col-md-7">
+                                        <div className="col-md-9">
                                             <input type="text" id="email" name="email" placeholder="example@abv.bg"/>
                                         </div>
                                     </div>
@@ -59,17 +59,17 @@ class Contact extends React.Component {
                                             <textarea  rows="5" cols="50" id="subject" name="subject" placeholder="Write something.."></textarea>
                                         </div>
                                     </div>
-                                    <div  className="row">
-                                    </div>
+                                  
                                     <div className="row">
-                                        <div className="col-md-4">
+                                        <div className="col-md-12">
                                             <input type="submit" value="Submit"/>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        </div>
+                        <div className="col-md-12">
                             <div className="">
                                 <strong>
                                     Address:
@@ -86,9 +86,6 @@ class Contact extends React.Component {
                             </div> 
                         </div>
                     </div>
-                    <div className="row"> 
-                    </div>
-                </div>
             </div>
         )
     }

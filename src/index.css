@@ -12,9 +12,9 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-#logo{
+.logo{
     width: 50px;
-    height: 50px;
+    height: 60px;
    
 }
 .navbar{
@@ -29,7 +29,7 @@ body {
 .bus-img{
     width: 100%;
     height: 100%;
-    margin-top: 30px ;
+    margin-top: 0px ;
     border-radius: 20px;
    
  }
@@ -59,7 +59,7 @@ body {
     background-color: rgb(108, 167, 240);
     color:white;
 }
-.demoForm {
+.users-form {
     width: 500px;
     margin: auto;
 }
@@ -111,7 +111,13 @@ body {
 .bus-seat-selected {
     background-color:#2483F7;
 }
-
+.free{
+    border: #980303;
+    background-color: #2483F7;
+    height: 32px;
+    width: 32px;
+    line-height: 31px;	
+}
 
 .seats-main{  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -128,6 +134,21 @@ body {
     padding-bottom: 50px;
     text-transform: uppercase;
     font-weight: 600;
+}
+.info-free{
+    width: 20px;
+    height: 20px;
+    background-color: #7e7d7d;
+}
+.info-selected{
+    width: 20px;
+    height: 20px;
+    background-color:#2483F7;
+}
+.info-reserved{
+    width: 20px;
+    height: 20px;
+    background-color:#980303;
 }
  h5{
     color: #000000;
@@ -150,7 +171,7 @@ body {
     clear: both;
     display: table;
 }
-.checkout-button {
+.buy-button,.users-button {
     display: block;
     margin: 10px 0;
     font-size: 16px;
@@ -169,14 +190,28 @@ body {
     -moz-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-.free{
-    border: #980303;
-    background-color: #2483F7;
-    height: 32px;
-    width: 32px;
-    line-height: 31px;	
+.signOut{
+    font-size: 16px;
+    background:rgb(235, 233, 231);
+    border: none;
+    color: rgb(70, 68, 68);
+    outline: none;
+	cursor:pointer;
 }
 
+.red {
+    height: 20px;
+    width: 20px;
+    background-color: #555;
+  }
+	
+.contactInfo h2 {
+    text-align: center;
+}
+.contact-icon{
+    width: 2%;
+    height: 2%;
+}
 .contactInfo .container *{
     box-sizing: border-box;
 }
@@ -184,7 +219,8 @@ body {
     border-radius: 7px;
     margin: 6px 8px;
     padding: 6px 8px;
-    background-color: rgb(45, 186, 218);
+background-color: rgb(231, 228, 228);
+border-radius: 10px;
 }
 
 .contactInfo .container form input,select,textarea{
@@ -194,13 +230,13 @@ body {
     border-radius: 4px;
     resize: vertical;
     background-color:white;  
-    color:white;
+   color:black
 }
 
 .contactInfo .container form  label {
     padding: 10px 10px 20px 0;
     display: inline-block;
-    color:white;
+
 }
 .contactInfo .container form input[type=submit] {
     background-color:floralwhite;
@@ -216,8 +252,7 @@ body {
     background-color:floralwhite;
 }
 
-.company{
-
+.logo{
     color:#BBBD2A;
     text-align: center;
     font-size: 500%;
@@ -226,10 +261,12 @@ body {
     text-transform: uppercase;
 }
 
-footer {
-    color: #fff;
+.footer {
+    color:gray;
     text-align: center;
     margin: 20px;
+    padding: 20px;
+    background:rgb(233, 232, 232);
 }
 .btn-log{
     margin:5px;
@@ -238,20 +275,20 @@ footer {
     padding: 20px;
 }
 
-.person-img{
+.account-img{
     width: 50%;
     height: 50%;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+ 
     text-align: center;
     font-family: arial;
-    padding: 10px;
+    padding: 50px;
   }
-  .profile h2{
+  .account  h2{
       text-align: center;
      
   }

@@ -9,22 +9,22 @@ import {
 var products = [{
   id: 1,
   date: "12/01/2018",
-  hour:"14:30",
-  line:"Plovdiv-Sofia",
+  hour:"11:30",
+  line:"Пловдив-София",
   price: 8, 
 },
 {
   id: 2,
   date: "12/01/2018",
-  hour:"13:30",
-  line:"Plovdiv-Sofia",
-  price: 8, 
-},
-{
-  id: 3,
-  date: "12/01/2018",
   hour:"12:30",
-  line:"Plovdiv-Sofia",
+  line:"Пловдив-София",
+  price: 8, 
+},
+{
+  id: 3,
+  date: "12/01/2018",
+  hour:"13:30",
+  line:"Пловдив-София",
   price: 8, 
   
 },
@@ -32,7 +32,7 @@ var products = [{
   id: 3,
   date: "12/01/2018",
   hour:"16:30",
-  line:"Plovdiv-Sofia",
+  line:"Пловдив-София",
   price: 8, 
   
 },
@@ -40,7 +40,7 @@ var products = [{
   id: 3,
   date: "12/01/2018",
   hour:"16:30",
-  line:"Plovdiv-Sofia",
+  line:"Пловдив-София",
   price: 8, 
   
 },
@@ -48,7 +48,7 @@ var products = [{
   id: 3,
   date: "12/01/2018",
   hour:"18:30",
-  line:"Plovdiv-Sofia",
+  line:"Пловдив-София",
   price: 8, 
   
 },
@@ -72,7 +72,7 @@ const cellEditProp = {
 };
 
 function BookTicket(){
-  return (<Link className="btn btn-info btn-md btn-block" to="/login">Book</Link>);
+  return (<Link className="btn btn-info btn-md btn-block" to="/userAction">Book</Link>);
 }
 class ShowTravelInformation extends Component {
   render() {

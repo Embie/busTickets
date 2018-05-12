@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/img/city.png'
+import LogoImg from '../../assets/img/city.png'
 import { Link } from 'react-router-dom';
 class Company extends React.Component {
     render() {
@@ -7,7 +7,7 @@ class Company extends React.Component {
         <div>
           <div className="btn-log">
              <a className="navbar-brand">
-                <img src={Logo} className="d-inline-block align-top logo" alt="logo" id="logo"/>
+                <img src={LogoImg} className="d-inline-block align-top logo" alt="logo" id="logo"/>
               </a>
              <Link className="btn btn-info btn-log" to="/">HOME</Link>
              <Link className="btn btn-info btn-log" to="/login">LOGIN</Link>
