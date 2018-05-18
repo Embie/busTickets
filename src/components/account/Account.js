@@ -31,7 +31,7 @@ class Account extends Component {
             <br/>
             <div className="account-info">
                 <p><strong>Name:</strong><span> </span></p>
-                <p><strong>Email:</strong><span> geri@gmail.com</span></p>
+                <p><strong>Email:</strong><span> </span></p>
                 <p><strong>Phone:</strong><span> 088207384</span></p>
             </div>
          </div>
@@ -52,7 +52,7 @@ const UserList = ({ users }) =>
     <p>(Saved on Sign Up in Firebase Database)</p>
 
     {Object.keys(users).map(key =>
-      <div key={key}>{users[key].username}</div>
+      <div key={key}>{users[key].currentUserName}</div>
     )}
   </div>
 export default Account;
