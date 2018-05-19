@@ -11,6 +11,7 @@ import PasswordChangeForm from './components/passwordAction/PasswordChange';
 import PasswordForgetPage from './components/passwordForget/PasswordForget';
 import PasswordChange from './components/passwordChange/PasswordChange';
 import MapWrapper from './components/contact/MapWrapper';
+
 //import Square from './components/busseats/Square';
 //import GeneralConditions from './components/condition/GeneralConditions';
 import  './App.css';

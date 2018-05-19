@@ -5,19 +5,39 @@ import DatePicker from 'material-ui/DatePicker';
 import { Paper } from 'material-ui';
 import ShowTravelInformation from './ShowTravelInformation';
 import Link from 'react';
+import { db } from '../../firebase/';
+
 class SearchTravel extends Component {
     constructor(props){
       super(props)
       this.state={
         selectOne:'Пловдив',
-        selectTwo:'',
+        selectTwo:'София',
+        results:[],
         date: null,
         showReply: false
       }
     }
     onClick(e){
       e.preventDefault();
-      this.setState({showReply: !this.state.showReply})
+      this.setState({showReply: true})
+
+      db.getRoutes(this.state.selectOne, this.state.selectTwo).then(querySnapshot => {
+
+        this.state.results = [];
+        querySnapshot.forEach((result) => {
+            var resultData = result.data();
+            resultData.id = result.id;
+            this.state.results.push(resultData);
+            this.setState({
+                results: this.state.results
+            })
+            debugger
+            console.log(this.state.results)
+        });
+    });
+
+
     }
     onChangeOne = (e) => {
       this.setState({
@@ -28,6 +48,7 @@ class SearchTravel extends Component {
       this.setState({
         selectTwo: e.target.value
       })
+      console.log(e.target.value)
     }
     onChangeDate = (event,date) => {
       this.setState({
@@ -63,7 +84,7 @@ class SearchTravel extends Component {
     
   
         <div className="col-md-12">
-           {this.state.showReply &&  <ShowTravelInformation/>}
+           {this.state.showReply &&  <ShowTravelInformation results={this.state.results}/>}
         </div>
       </div>
       )

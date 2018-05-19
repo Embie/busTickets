@@ -6,53 +6,16 @@ import {
 
 } from 'react-router-dom';
 
-var products = [{
+let results = [{
   id: 1,
-  date: "12/01/2018",
-  hour:"11:30",
-  line:"Пловдив-София",
-  price: 8, 
-},
-{
-  id: 2,
-  date: "12/01/2018",
-  hour:"12:30",
-  line:"Пловдив-София",
-  price: 8, 
-},
-{
-  id: 3,
-  date: "12/01/2018",
-  hour:"13:30",
-  line:"Пловдив-София",
-  price: 8, 
-  
-},
-{
-  id: 3,
-  date: "12/01/2018",
-  hour:"16:30",
-  line:"Пловдив-София",
-  price: 8, 
-  
-},
-{
-  id: 3,
-  date: "12/01/2018",
-  hour:"16:30",
-  line:"Пловдив-София",
-  price: 8, 
-  
-},
-{
-  id: 3,
-  date: "12/01/2018",
-  hour:"18:30",
-  line:"Пловдив-София",
-  price: 8, 
-  
-},
-];
+  company: "Витоша Експрес",
+  days:[0,1,2,3,4,5],
+  from:"Пловдив",
+  to:"София",
+  departure: "18:30",
+  arrival: "20:30",
+}];
+
 const options = {
   exportCSVText: 'Export',
   insertText: 'Add',
@@ -88,24 +51,24 @@ class ShowTravelInformation extends Component {
         <div className="row">
           <div className="col-md-12">
             <div className="ShowTravelInformation">
-              <BootstrapTable data={ products }
+              <BootstrapTable data={ this.props.results }
               search={true}
               searchPlaceholder='Enter city'
                insertRow
                cellEdit={ cellEditProp }
                 deleteRow={ true } 
-                selectRow={ selectRowProp } 
                 exportCSV={ true }
                 clearSearch={true} 
                 options={ options }
                 responsive={true}
-                width={window.innerWidth < 406 ? '0' : '5%'}
                 striped
                  >
                   <TableHeaderColumn dataField='id' isKey hidden>ID</TableHeaderColumn>
-                  <TableHeaderColumn dataField='date'>Дата</TableHeaderColumn>
-                  <TableHeaderColumn dataField='hour'  searchable={ true }>Час</TableHeaderColumn>
-                  <TableHeaderColumn dataField='line' searchable={ true }>Линия</TableHeaderColumn>
+                  <TableHeaderColumn dataField='from'>От</TableHeaderColumn>
+                  <TableHeaderColumn dataField='to'>До</TableHeaderColumn>
+                  <TableHeaderColumn dataField='departure'>Тръгва</TableHeaderColumn>
+                  <TableHeaderColumn dataField='arrival'>Пристига</TableHeaderColumn>
+                  <TableHeaderColumn dataField='company' searchable={ true }>Компания</TableHeaderColumn>
                   <TableHeaderColumn dataField='price'>Цена</TableHeaderColumn>
                   <TableHeaderColumn dataField='Link' insertRow={ false }   dataFormat={BookTicket}></TableHeaderColumn>
               </BootstrapTable>
